@@ -5,7 +5,9 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net.Mail;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -30,7 +32,7 @@ namespace BaseForms.Forms
 
         public enum ValidationTypes
         {
-            Text, Numeric, Bool, PositiveNumeric
+            Text, Numeric, Bool, PositiveNumeric, Email
         }
 
         public Basic()
@@ -120,6 +122,23 @@ namespace BaseForms.Forms
                         {
                             validated = true;
                         }
+                    }
+                    break;
+				case ValidationTypes.Email:
+                    if (String.IsNullOrWhiteSpace(controlToValidate.Text))
+                    {
+                        errorContainer1.Control = controlToValidate;
+                        if (userMessage != null) errorContainer1.Message = userMessage;
+                        controlToValidate.Focus();
+                    }
+                    else
+                    {
+						validated = Regex.IsMatch(controlToValidate.Text, @"^([\w-\.+]+)@(([[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(]?)$");
+						if (!validated) { 
+							errorContainer1.Control = controlToValidate;
+							if (userMessage != null) errorContainer1.Message = userMessage;
+							controlToValidate.Focus();
+						}
                     }
                     break;
                 default:
