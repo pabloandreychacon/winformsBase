@@ -56,11 +56,10 @@
 			this.lblInfoMessage.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
 			this.lblInfoMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblInfoMessage.ForeColor = System.Drawing.Color.Blue;
-			this.lblInfoMessage.Location = new System.Drawing.Point(12, 439);
+			this.lblInfoMessage.Location = new System.Drawing.Point(11, 408);
 			this.lblInfoMessage.Name = "lblInfoMessage";
-			this.lblInfoMessage.Size = new System.Drawing.Size(87, 31);
+			this.lblInfoMessage.Size = new System.Drawing.Size(2, 31);
 			this.lblInfoMessage.TabIndex = 1;
-			this.lblInfoMessage.Text = "label1";
 			// 
 			// Basic
 			// 
