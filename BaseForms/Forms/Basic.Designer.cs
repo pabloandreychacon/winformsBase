@@ -55,8 +55,8 @@
 			this.lblInfoMessage.AutoSize = true;
 			this.lblInfoMessage.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
 			this.lblInfoMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblInfoMessage.ForeColor = System.Drawing.Color.Blue;
-			this.lblInfoMessage.Location = new System.Drawing.Point(11, 408);
+			this.lblInfoMessage.ForeColor = System.Drawing.Color.Green;
+			this.lblInfoMessage.Location = new System.Drawing.Point(59, 400);
 			this.lblInfoMessage.Name = "lblInfoMessage";
 			this.lblInfoMessage.Size = new System.Drawing.Size(2, 31);
 			this.lblInfoMessage.TabIndex = 1;
@@ -88,6 +88,6 @@
 
         public BaseControls.User.ErrorContainer errorContainer1;
         public System.Windows.Forms.ToolTip toolTip1;
-		private System.Windows.Forms.Label lblInfoMessage;
+		public System.Windows.Forms.Label lblInfoMessage;
 	}
 }
