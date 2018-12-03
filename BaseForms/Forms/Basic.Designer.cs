@@ -70,6 +70,7 @@
 			this.Controls.Add(this.lblInfoMessage);
 			this.Controls.Add(this.errorContainer1);
 			this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
 			this.MaximizeBox = false;
