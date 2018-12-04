@@ -156,6 +156,11 @@ namespace BaseForms.Forms
             }
             return validated;
         }
-        #endregion
-    }
+		#endregion
+
+		private void Basic_MouseHover(object sender, EventArgs e)
+		{
+			lblInfoMessage.Text = "";
+		}
+	}
 }

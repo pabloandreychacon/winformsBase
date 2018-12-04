@@ -80,6 +80,7 @@
 			this.Text = "Base";
 			this.Load += new System.EventHandler(this.Base_Load);
 			this.DoubleClick += new System.EventHandler(this.Base_DoubleClick);
+			this.MouseHover += new System.EventHandler(this.Basic_MouseHover);
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
