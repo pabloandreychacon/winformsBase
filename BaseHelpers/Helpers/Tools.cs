@@ -381,5 +381,31 @@ namespace BaseHelpers.Helpers
                 return dt;
             }
         }
+
+		public class TimeTools
+		{
+			public static String DayOfWeekToSpanish(string dow)
+			{
+				switch (dow)
+				{
+					case ("Sunday"):
+						return "Domingo";
+					case ("Monday"):
+						return "Lunes";
+					case ("Tuesday"):
+						return "Martes";
+					case ("Wednesday"):
+						return "Miércoles";
+					case ("Thursday"):
+						return "Jueves";
+					case ("Friday"):
+						return "Viernes";
+					case ("Saturday"):
+						return "Sábado";
+					default:
+						return "Lunes";
+				}
+			}
+		}
     }
 }
