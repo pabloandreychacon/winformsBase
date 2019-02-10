@@ -72,6 +72,15 @@ namespace BaseForms.Forms
             // valida en el hijo
             return true;
         }
-        
+
+        private void btnFind_MouseHover(object sender, EventArgs e)
+        {
+            toolTip1.SetToolTip(btnFind, "Buscar");
+        }
+
+        private void closeButton1_MouseHover(object sender, EventArgs e)
+        {
+            toolTip1.SetToolTip(this.closeButton1, "Salir");
+        }
     }
 }
