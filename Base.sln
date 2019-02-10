@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.329
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Base", "Base\Base.csproj", "{C7C37675-6EBB-4A32-9BF7-6DA697E192C1}"
 EndProject
@@ -12,24 +12,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseHelpers", "BaseHelpers\BaseHelpers.csproj", "{FB858555-389D-4A51-9FB4-AD259DF54AED}"
 EndProject
 Global
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 5
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://pabloandreychacon.visualstudio.com/defaultcollection
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = Base\\Base.csproj
-		SccProjectName1 = Base
-		SccLocalPath1 = Base
-		SccProjectUniqueName2 = BaseControls\\BaseControls.csproj
-		SccProjectName2 = BaseControls
-		SccLocalPath2 = BaseControls
-		SccProjectUniqueName3 = BaseForms\\BaseForms.csproj
-		SccProjectName3 = BaseForms
-		SccLocalPath3 = BaseForms
-		SccProjectUniqueName4 = BaseHelpers\\BaseHelpers.csproj
-		SccProjectName4 = BaseHelpers
-		SccLocalPath4 = BaseHelpers
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -54,5 +36,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {955E517B-2347-43A6-B80E-5F41E8E0F4B9}
 	EndGlobalSection
 EndGlobal
